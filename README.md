@@ -4,3 +4,5 @@ MTRX5700 Experimental Robotics course at the University of Sydney. Copyright. Th
 ## Guides
 - [UG Formatting Tips and Tricks](https://github.com/nackjaylor/formatting_tips-tricks)
 - [Tello Drone starter guide](quickstarts/tello.md)
+- [UR5E Robotic Arm starter guide](quickstarts/ur5e.md)
+- [Turtlebot3 starter guide](quickstarts/turtlebot3.md)
