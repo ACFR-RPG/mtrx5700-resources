@@ -1,6 +1,6 @@
 # Tello EDU Drones
 
-IMPORTANT: Any students within to operate a drone in this course must acquire their remotely piloted aircraft (RPA) operator accreditation. This is free, and available online through the Civil Aviation Safety Authority (CASA). Information and an outline of how to obtain this may be found [at this link](https://www.casa.gov.au/drones/get-your-operator-credentials/operator-accreditation).
+IMPORTANT: Any students wishing to operate a drone in this course must acquire their remotely piloted aircraft (RPA) operator accreditation. This is free, and available online through the Civil Aviation Safety Authority (CASA). Information and an outline of how to obtain this may be found [at this link](https://www.casa.gov.au/drones/get-your-operator-credentials/operator-accreditation).
 
 ## ROS
 The Tello drones are not locked to ROS Noetic as we use in this course, however we have only tested their operation through the code provided on Noetic. 
