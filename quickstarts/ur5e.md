@@ -10,6 +10,19 @@ Turn on the UR5e using the power button on the teach pendant. This powers on the
 Once the robot is powered on, it is good practice to manually freedrive the arm (using the button on the back of the teach pendant) to a configuration close to where the working configuration of the arm will be. You should also check the angles of the UR5e, particularly the wrist, and freedrive any to the middle of their axes to avoid wind-up of joints to the end of their physical limits. Good practice is also to use the teach pendant to test movement through all axes and ensure the arm is working nominally.
 
 
+## Dependencies
+Git clone the following repositorties into your workspace
+ - https://github.com/pal-robotics/gazebo_ros_link_attacher
+ - https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
+ - https://github.com/UniversalRobots/Universal_Robots_Client_Library
+ - https://github.com/ros-industrial/universal_robot
+ - https://github.com/nackjaylor/robotiq
+
+```
+sudo apt update -qq && rosdep update && rosdep install --from-paths src --ignore-src -y
+catkin build
+```
+
 ## ROS Connection
 Onboard the teach pendant there is an `external control` script which needs to be run to enable communcation between the UR5e and ROS. Run this script prior to running the below commands.
 
@@ -56,3 +69,4 @@ You may wish to remove the gripper and create interfaces on the tool flange. You
 You may find the following resources useful in creating these new mounts:
 [UR5e user manual](https://s3-eu-west-1.amazonaws.com/ur-support-site/40971/UR5e_User_Manual_en_Global.pdf)
 [UR5e Technical Specifications](https://www.universal-robots.com/media/1807465/ur5e-rgb-fact-sheet-landscape-a4.pdf)
+
