@@ -56,3 +56,16 @@ You may wish to remove the gripper and create interfaces on the tool flange. You
 You may find the following resources useful in creating these new mounts:
 [UR5e user manual](https://s3-eu-west-1.amazonaws.com/ur-support-site/40971/UR5e_User_Manual_en_Global.pdf)
 [UR5e Technical Specifications](https://www.universal-robots.com/media/1807465/ur5e-rgb-fact-sheet-landscape-a4.pdf)
+
+
+## Dependencies
+ - git@github.com:pal-robotics/gazebo_ros_link_attacher.git
+ - https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
+ - https://github.com/UniversalRobots/Universal_Robots_Client_Library
+ - https://github.com/ros-industrial/universal_robot
+ - https://github.com/ros-industrial/robotiq
+
+```
+sudo apt update -qq && rosdep update && rosdep install --from-paths src --ignore-src -y
+catkin build
+```
