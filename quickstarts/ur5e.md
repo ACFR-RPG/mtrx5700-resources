@@ -59,11 +59,12 @@ You may find the following resources useful in creating these new mounts:
 
 
 ## Dependencies
- - git@github.com:pal-robotics/gazebo_ros_link_attacher.git
+Git clone the following repositorties into your workspace
+ - https://github.com/pal-robotics/gazebo_ros_link_attacher
  - https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
  - https://github.com/UniversalRobots/Universal_Robots_Client_Library
  - https://github.com/ros-industrial/universal_robot
- - https://github.com/ros-industrial/robotiq
+ - https://github.com/nackjaylor/robotiq
 
 ```
 sudo apt update -qq && rosdep update && rosdep install --from-paths src --ignore-src -y
