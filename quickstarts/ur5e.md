@@ -37,6 +37,7 @@ roslaunch ur5_e_moveit_config ur5_e_moveit_planning_execution.launch sim:=false
 roslaunch ur5_e_moveit_config moveit_rviz.launch config:=true
 ```
 
+For assignments, you may need to run slightly different commands to run the robot. Where this is the case, we will document these inside the appropriate assignment folder.
 
 ## Robotiq Hand-E Gripper
 The UR5e in the teaching lab is equipped with a Robotiq Hand-E gripper. Actuation of this gripper is achieved over a USB connection. Despite the cable from the gripper going into the main UR5e computer, the USB cable must still be inserted into either the teach pendant or the controlling computer to communicate.
@@ -67,6 +68,9 @@ As part of this course, you will likely want to equip the UR5e with a vision sys
 You may wish to remove the gripper and create interfaces on the tool flange. You may wish to attach something to the wrist of the UR5e. Whilst there are some existing mounts for Intel Realsenses, we encourage you to do some design yourself to create appropriate hardware.
 
 You may find the following resources useful in creating these new mounts:
+
 [UR5e user manual](https://s3-eu-west-1.amazonaws.com/ur-support-site/40971/UR5e_User_Manual_en_Global.pdf)
+
 [UR5e Technical Specifications](https://www.universal-robots.com/media/1807465/ur5e-rgb-fact-sheet-landscape-a4.pdf)
 
+Please consult the tutors in how you may include these in simulation for collision detection, interfacing etc.
