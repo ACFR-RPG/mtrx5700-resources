@@ -7,7 +7,7 @@ The Turtlebot 3's used in this course are equipped with a Raspberry Pi 3 Model B
 
 
 ## WiFi Connection
-Turtlebots used for the MTRX subjects at the University of Sydney now run custom software and have a specially designed hardware "hat" which allows the Turtlebots to reconfigure between an access point that broadcasts or WiFi connection to another network. We provide a document on Canvas used by MTRX3760 which outlines the configuation of the Turtlebots between these two modes.
+Turtlebots used for the MTRX subjects at the University of Sydney now run custom software and have a specially designed hardware "hat" which allows the Turtlebots to reconfigure between an access point that broadcasts or WiFi connection to another network. We provide a document on Canvas developed by MTRX staff which outlines the configuation of the Turtlebots between these two modes.
 
 Please note: students wishing to undertake projects with multiple Turtlebots will need to use a WiFi connection to another network, rather than individual Turtlebots (i.e. all Turtlebots must be in WiFi mode, on the same network e.g. KIRBYBOTS - not AP mode).
 
