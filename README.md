@@ -11,3 +11,6 @@ MTRX5700 Experimental Robotics course at the University of Sydney. Copyright. Th
 
 ## Sensor Starter Guides
 - [Intel Realsense D435/D435i](quickstarts/realsense.md)
+
+## Compute Hardware
+- [GPU Lab Machines](quickstarts/gpu_machines.md)
