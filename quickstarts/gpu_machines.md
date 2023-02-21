@@ -8,7 +8,7 @@ The two machines are abled to be accessed using:
 ```bash
 ssh <USER_NAME>@kirbylab-gpu-0X.mxlab.acfr.usyd.edu.au
 ```
-Where X is one of 1 or 2 indicating the machine number. 
+Where X is one of 1 or 2 indicating the machine number. You will need to be on the University of Sydney VPN to access these resources.
 
 ## Managing Runtime
 To be as fair as possible, these machines will run with different processes on each GPU. That means each machine may have at most 2 groups running things on each machine at each time. There will be a Google sheet available from the MTRX5700 staff with the machine and its GPU(s) which you are to check and schedule into. Where groups are seen to hog the GPU, their processes will be killed automatically to ensure fair and equal availability to the class.  
