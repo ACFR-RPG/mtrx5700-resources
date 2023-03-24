@@ -39,7 +39,7 @@ Your user directory is synced between the Lab PCs and the GPU enabled machines. 
 The following bash script might be useful to you in running training code restricted to a single GPU. You should do this where possible. Do not hog GPUs.
 
 ```bash
-#!bin/bash
+#!/bin/bash
 
 export CUDA_VISIBLE_DEVICES=X   #Where X is 0 or 1
 
