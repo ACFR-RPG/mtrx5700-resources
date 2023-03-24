@@ -24,8 +24,25 @@ For major projects, we expect that not all of the class will seek to use a machi
 | RAM   | 32GB        | 64GB
 | System   | Ubuntu 20.04.5        |Ubuntu 20.04.5 |
 
+
+NOTE `gpu-02` blew up and is only currently operating with a GTX1080.
+
+
 `gpu-02` is likely best for things like SLAM with feature detection running on the GPU, since it has higher memory, while `gpu-01` might be better for depth estimation or pretraining an object detection/segmentation network.
 
 ## Moving Datasets
 Your user directory is synced between the Lab PCs and the GPU enabled machines. As such, you can place your datasets in your home directory, and your code and it will appear shortly in the directory of the GPU machines.
+
+
+## Running Restricted to Single GPU
+
+The following bash script might be useful to you in running training code restricted to a single GPU. You should do this where possible. Do not hog GPUs.
+
+```bash
+#!bin/bash
+
+export CUDA_VISIBLE_DEVICES=X   #Where X is 0 or 1
+
+python3 train.py 
+```
 
