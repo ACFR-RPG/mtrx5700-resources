@@ -39,10 +39,13 @@ Your user directory is synced between the Lab PCs and the GPU enabled machines. 
 The following bash script might be useful to you in running training code restricted to a single GPU. You should do this where possible. Do not hog GPUs.
 
 ```bash
-#!bin/bash
+#!/bin/bash
 
 export CUDA_VISIBLE_DEVICES=X   #Where X is 0 or 1
 
 python3 train.py 
 ```
 
+You should then call `./train.sh` to execute the above script from the same folder as your python script (assuming you've called it this). This ensures pytorch only ever ses the GPU which has been set to visible.
+
+Note you may need to chmod +x the shell script.
