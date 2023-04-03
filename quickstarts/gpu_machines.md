@@ -20,18 +20,15 @@ For major projects, we expect that not all of the class will seek to use a machi
 | ----------- | ----------- | ----------- |
 | CPU      | i7-7820X (16) @ 4.6GHz |  i7-5930K (12) @ 3.7GHz     |
 | GPU 0   | RTX3080        | GTX1080 |
-| GPU 1   | RTX3080        | RTX2080 Ti|
+| GPU 1   | RTX3080        | GTX1080|
 | RAM   | 32GB        | 64GB
 | System   | Ubuntu 20.04.5        |Ubuntu 20.04.5 |
-
-
-NOTE `gpu-02` blew up and is only currently operating with a GTX1080.
 
 
 `gpu-02` is likely best for things like SLAM with feature detection running on the GPU, since it has higher memory, while `gpu-01` might be better for depth estimation or pretraining an object detection/segmentation network.
 
 ## Moving Datasets
-Your user directory is synced between the Lab PCs and the GPU enabled machines. As such, you can place your datasets in your home directory, and your code and it will appear shortly in the directory of the GPU machines.
+Your user directory is synced between the Lab PCs and the GPU enabled machines. As such, you can place your datasets in your home directory, and your code and it will appear shortly in the directory of the GPU machines. Note it has to be in the root of your home directory - do not place in Downloads!
 
 
 ## Running Restricted to Single GPU
