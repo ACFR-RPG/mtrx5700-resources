@@ -6,6 +6,9 @@ IMPORTANT: The resources here may be updated periodically. This is a communal an
 ## Guides for Assignments
 - [UG Formatting Tips and Tricks](https://github.com/nackjaylor/formatting_tips-tricks)
 
+## Environment Setup
+- [Ubuntu 20.04 Environment (2024)](environment/2004_noetic.txt)
+
 ## Robot Starter Guides
 - [Tello Drone starter guide](quickstarts/tello.md)
 - [UR5E Robotic Arm starter guide](quickstarts/ur5e.md)
