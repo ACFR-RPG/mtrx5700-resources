@@ -33,6 +33,8 @@ sudo apt-get install terminator
 sudo apt install tmux
 
 
+
+
 # VS Code
 sudo apt-get install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -234,8 +236,19 @@ cd
 
 sudo snap install arduino
 
+# Realsense
+sudo apt install apt-transport-https
+sudo mkdir -p /etc/apt/keyrings
+curl -sSf https://librealsense.intel.com/Debian/librealsense.pgp | sudo tee /etc/apt/keyrings/librealsense.pgp > /dev/null
 
-## (Optional!) Docker
+echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsense.intel.com/Debian/apt-repo `lsb_release -cs` main" | \
+sudo tee /etc/apt/sources.list.d/librealsense.list
+sudo apt-get update librealsense2-dkms librealsense2-utils librealsense2-dev librealsense2-dbg
+
+sudo apt install librealsense2-dkms 
+
+
+# (Optional!) Docker
 # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
