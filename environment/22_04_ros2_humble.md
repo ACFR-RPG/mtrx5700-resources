@@ -319,7 +319,9 @@ ros2 run turtlesim turtlesim_node & ros2 run turtlesim turtle_teleop_key
 ```
 Follow the instructions to move the turtle around. This is what should happen:
 
-![Turtlesim Demo](demo_images/turtlesim.png)
+<p align="center" width="100%">
+    <img width="33%" src="demo_images/turtlesim.png">
+</p>
 
 In a separate terminal, run:
 ```bash
