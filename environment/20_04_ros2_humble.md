@@ -4,13 +4,13 @@
 
 
 ### Setting up the framework
-The code we provide for the assignments were tested on Ubuntu 22.04 with ROS2 Humble and Gazebo 11.10.2.
+The code we provide for the assignments were tested on Ubuntu 20.04 with ROS2 Humble and Gazebo 11.10.2.
 Please try to match this configuration if you are using your personal computers.
 The code may also work on ROS2 Jazzy, Foxy, but it has not been tested.
 
 #### Pre-requisites (Only for personal computers. If you are using computers in the MXLab, skip this step)
 
-1. Install [Ubuntu 22.04](https://releases.ubuntu.com/jammy/).
+1. Install [Ubuntu 20.04](https://releases.ubuntu.com/focal/).
 2. Install ROS2 Humble following the instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html).
 3. Install dependencies
 Handy hint - if you’d like to walk away while your computer does this, add -y to the end of every apt install line and execute this as a bash script. Some googling will go a long way here.
@@ -82,7 +82,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update
 
 sudo apt install ros-humble-desktop-full
-sudo apt-get install ros-humble-ros2-control ros-humble-ros-controllers ros-humble-clearpath-ros2-socketcan-interface ros-humble-moveit ros-humble-moveit-visual-tools ros-humble-moveit-resources ros-humble-actionlib ros-humble-derived-object-msgs ros-humble-gazebo-ros ros-humble-gazebo-ros-control ros-humble-eigen-conversions ros-humble-actionlib ros-humble-actionlib-msgs ros-humble-control-msgs ros-humble-controller-interface ros-humble-controller-manager ros-humble-dynamic-reconfigure ros-humble-effort-controllers ros-humble-force-torque-sensor-controller ros-humble-gazebo-ros ros-humble-gazebo-ros-control ros-humble-geometry-msgs ros-humble-hardware-interface ros-humble-joint-state-controller ros-humble-joint-state-publisher ros-humble-joint-trajectory-controller ros-humble-message-generation ros-humble-message-runtime ros-humble-moveit-core ros-humble-moveit-fake-controller-manager ros-humble-moveit-kinematics ros-humble-moveit-planners-ompl ros-humble-moveit-ros-manipulation ros-humble-moveit-ros-move-group ros-humble-moveit-ros-planning ros-humble-moveit-ros-visualization ros-humble-moveit-simple-controller-manager ros-humble-pluginlib ros-humble-realtime-tools ros-humble-robot-state-publisher ros-humble-roscpp ros-humble-sensor-msgs ros-humble-std-srvs ros-humble-tf ros-humble-tf-conversions ros-humble-tf2-geometry-msgs ros-humble-tf2-msgs ros-humble-tf2-ros ros-humble-trajectory-msgs ros-humble-urdf ros-humble-velocity-controllers ros-humble-xacro ros-humble-ur-msgs ros-humble-std-msgs ros-humble-controller-manager-msgs
+sudo apt-get install ros-humble-ros2-control ros-humble-ros-controllers ros-humble-clearpath-ros2-socketcan-interface ros-humble-moveit ros-humble-moveit-visual-tools ros-humble-moveit-sim-controller ros-humble-moveit-resources ros-humble-actionlib ros-humble-derived-object-msgs ros-humble-gazebo-ros ros-humble-gazebo-ros-control ros-humble-eigen-conversions ros-humble-actionlib ros-humble-actionlib-msgs ros-humble-control-msgs ros-humble-controller-interface ros-humble-controller-manager ros-humble-dynamic-reconfigure ros-humble-effort-controllers ros-humble-force-torque-sensor-controller ros-humble-gazebo-ros ros-humble-gazebo-ros-control ros-humble-geometry-msgs ros-humble-hardware-interface ros-humble-joint-state-controller ros-humble-joint-state-publisher ros-humble-joint-trajectory-controller ros-humble-message-generation ros-humble-message-runtime ros-humble-moveit-core ros-humble-moveit-fake-controller-manager ros-humble-moveit-kinematics ros-humble-moveit-planners-ompl ros-humble-moveit-ros-manipulation ros-humble-moveit-ros-move-group ros-humble-moveit-ros-planning ros-humble-moveit-ros-visualization ros-humble-moveit-simple-controller-manager ros-humble-pluginlib ros-humble-realtime-tools ros-humble-robot-state-publisher ros-humble-roscpp ros-humble-sensor-msgs ros-humble-std-srvs ros-humble-tf ros-humble-tf-conversions ros-humble-tf2-geometry-msgs ros-humble-tf2-msgs ros-humble-tf2-ros ros-humble-trajectory-msgs ros-humble-urdf ros-humble-velocity-controllers ros-humble-xacro ros-humble-ur-msgs ros-humble-std-msgs ros-humble-controller-manager-msgs
 
 sudo apt install ros-humble-industrial-robot-status-interface \
 ros-humble-actionlib \
