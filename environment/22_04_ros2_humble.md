@@ -201,10 +201,8 @@ ros-humble-rospy \
 ros-humble-sensor-msgs \
 ros-humble-std-msgs
 
-sudo apt install python3-rospy
-
 # Tello Drones
-sudo apt install ros-humble-camera-info-manager ros-humble-codec-image-transport python3-catkin-tools ros-humble-tello-driver ros-humble-teleop-twist-keyboard
+sudo apt install  ros-humble-codec-image-transport python3-catkin-tools ros-humble-tello-driver ros-humble-teleop-twist-keyboard
 
 # Turtlebot 3
 sudo apt-get install ros-humble-joy ros-humble-teleop-twist-joy \
@@ -221,18 +219,20 @@ sudo apt install ros-humble-turtlebot3-msgs
 sudo apt install ros-humble-turtlebot3
 
 # Pip installs (Machine learning, visualisation)
+sudo apt-get install python3-pip
 pip3 install jupyterlab
 pip3 install numpy scikit-image pandas matplotlib scipy transformations
 pip3 install open3d
 pip3 install opencv-python
 pip3 install torch torchvision torchaudio torch_geometric
-pip3 install jax jaxlib flax pillow tensorboard tensorflow gin-config dm-pix rawpy mediapy immutabledist ml_collections jaxcam chex 
+pip3 install jax jaxlib flax pillow tensorboard tensorflow gin-config dm-pix rawpy mediapy immutabledict ml_collections jaxcam chex 
 pip3 install av
 pip3 install spatialgeometry spatialmath-python roboticstoolbox-python swift-sim qpsolvers pyyaml
 pip3 install polyscope
 
 
 # GTSAM Install
+cd ~
 git clone https://github.com/borglab/gtsam.git
 cd ./gtsam
 mkdir build
