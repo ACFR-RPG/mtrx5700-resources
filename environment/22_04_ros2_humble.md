@@ -242,6 +242,7 @@ make check
 make install
 cd 
 
+# Arduino IDE
 sudo snap install arduino
 
 # Realsense
@@ -251,9 +252,9 @@ curl -sSf https://librealsense.intel.com/Debian/librealsense.pgp | sudo tee /etc
 
 echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsense.intel.com/Debian/apt-repo `lsb_release -cs` main" | \
 sudo tee /etc/apt/sources.list.d/librealsense.list
-sudo apt-get update librealsense2-dkms librealsense2-utils librealsense2-dev librealsense2-dbg
 
-sudo apt install librealsense2-dkms 
+sudo apt-get update
+sudo apt-get install librealsense2-dkms librealsense2-utils librealsense2-dev librealsense2-dbg
 
 
 # (Optional!) Docker
@@ -274,24 +275,54 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-4. Initialize and update rosdep
+4. Install colcon and rosdep (https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
 ```bash
+sudo apt install python3-colcon-common-extensions
+sudo apt-get install python3-rosdep
+
 sudo rosdep init
-rosdep update
+rosdep update # do not run as sudo
 ```
 
 
-#### From here onwards, the steps apply to both personal computers
+#### From here onwards, the steps apply to both personal computers and lab computers
 
-#### Setting up catkin workspace
+#### Setting up colcon workspace
 The computers in MXLab have the above configuration. All the dependencies for this code to run have been installed. Please type the following commands in a terminal one after the other.
-1. Source ROS commands
+1. Source ROS2 commands. (Must run this in each new bash terminal!)
 ```bash
 source /opt/ros/humble/setup.bash
 ```
-2. Create and initialize new catkin workspace. You may choose any name you like.
-Here we chose **`mtrx5700space`** and it is located in the home directory.  
+On your personal computer, you can automate the command to run in each new bash terminal:
 ```bash
-mkdir -p mtrx5700space/src && cd mtrx5700space
-catkin init
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && source /opt/ros/humble/setup.bash
+```
+
+2. Create and initialise a new colcon workspace. You may choose any name you like.
+Here we chose **`ros2_mtrx5700ws`** and it is located in the home directory. The standard naming convention is `ros2_ws`.
+```bash
+mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws
+
+rosdep install -i --from-path src --rosdistro humble -y
+colcon build
+```
+
+3. (Optional) Download ROS2 Humble tutorials, such as turtlesim, and build packages using colcon.
+```bash
+cd ~/ros2_mtrx5700ws/src
+git clone https://github.com/ros/ros_tutorials.git -b humble
+
+rosdep install -i --from-path src --rosdistro humble -y
+colcon build
+
+ros2 run turtlesim turtlesim_node & ros2 run turtlesim turtle_teleop_key
+```
+Follow the instructions to move the turtle around. This is what should happen:
+
+![Turtlesim Demo](demo_images/turtlesim.png)
+
+In a separate terminal, run:
+```bash
+source /opt/ros/humble/setup.bash 
+ros2 topic echo /turtle1/pose
 ```
