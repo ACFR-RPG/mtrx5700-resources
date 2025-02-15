@@ -201,8 +201,8 @@ ros-jazzy-rospy \
 ros-jazzy-sensor-msgs \
 ros-jazzy-std-msgs
 
-# Tello Drones
-sudo apt install  ros-jazzy-codec-image-transport python3-catkin-tools ros-jazzy-tello-driver ros-jazzy-teleop-twist-keyboard
+# # Tello Drones
+# sudo apt install  ros-jazzy-codec-image-transport python3-catkin-tools ros-jazzy-tello-driver ros-jazzy-teleop-twist-keyboard
 
 # Turtlebot 3
 sudo apt-get install ros-jazzy-joy ros-jazzy-teleop-twist-joy \
@@ -220,15 +220,10 @@ sudo apt install ros-jazzy-turtlebot3
 
 # Pip installs (Machine learning, visualisation)
 sudo apt-get install python3-pip
-pip3 install jupyterlab
-pip3 install numpy scikit-image pandas matplotlib scipy transformations
-pip3 install open3d
-pip3 install opencv-python
-pip3 install torch torchvision torchaudio torch_geometric
-pip3 install jax jaxlib flax pillow tensorboard tensorflow gin-config dm-pix rawpy mediapy immutabledict ml_collections jaxcam chex 
-pip3 install av
-pip3 install spatialgeometry spatialmath-python roboticstoolbox-python swift-sim qpsolvers pyyaml
-pip3 install polyscope
+sudo apt install python3-ipython jupyter
+sudo apt install python3-numpy python3-skimage-lib python3-pandas python3-matplotlib python3-scipy
+python3 -m venv ~/machinelearning_env && ~/machinelearning_env/bin/pip install transformations open3d torch torchvision torchaudio torch_geometric jax jaxlib flax pillow tensorboard tensorflow gin-config dm-pix rawpy mediapy immutabledict ml_collections jaxcam chex av spatialgeometry spatialmath-python roboticstoolbox-python swift-sim qpsolvers pyyaml polyscope
+sudo apt install python3-opencv
 
 
 # GTSAM Install
