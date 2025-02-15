@@ -4,7 +4,7 @@
 
 
 ### Setting up the framework
-The code we provide for the assignments were tested on Ubuntu 24.04 with ROS2 Jazzy and Gazebo 11.10.2.
+The code we provide for the assignments were tested on Ubuntu 24.04 with ROS2 Jazzy and Gazebo 1.0.7-1noble.
 Please try to match this configuration if you are using your personal computers.
 The code may also work on ROS2 Rolling, but it has not been tested.
 
