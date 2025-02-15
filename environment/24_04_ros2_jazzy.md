@@ -226,30 +226,14 @@ python3 -m venv ~/machinelearning_env && ~/machinelearning_env/bin/pip install t
 sudo apt install python3-opencv
 
 
-# GTSAM Install
-cd ~
-git clone https://github.com/borglab/gtsam.git
-cd ./gtsam
-mkdir build
-cd build
-cmake ..
-make check
-make install
-cd 
+# GTSAM Install (https://launchpad.net/~borglab/+archive/ubuntu/gtsam-release-4.2?field.series_filter=jammy)
+sudo apt install libgtsam-dev
+
 
 # Arduino IDE
 sudo snap install arduino
 
-# Realsense
-sudo apt install apt-transport-https
-sudo mkdir -p /etc/apt/keyrings
-curl -sSf https://librealsense.intel.com/Debian/librealsense.pgp | sudo tee /etc/apt/keyrings/librealsense.pgp > /dev/null
-
-echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsense.intel.com/Debian/apt-repo `lsb_release -cs` main" | \
-sudo tee /etc/apt/sources.list.d/librealsense.list
-
-sudo apt-get update
-sudo apt-get install librealsense2-dkms librealsense2-utils librealsense2-dev librealsense2-dbg
+# Realsense (not yet supported on 24 - https://dev.intelrealsense.com/docs/compiling-librealsense-for-linux-ubuntu-guide)
 
 
 # (Optional!) Docker

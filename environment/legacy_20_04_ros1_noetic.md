@@ -223,7 +223,7 @@ pip3 install spatialgeometry spatialmath-python roboticstoolbox-python swift-sim
 pip3 install polyscope
 
 
-# GTSAM Install (https://gtsam.org/get_started/)
+# GTSAM Install 
 git clone https://github.com/borglab/gtsam.git
 cd ./gtsam
 mkdir build
