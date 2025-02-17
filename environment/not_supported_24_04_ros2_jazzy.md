@@ -9,7 +9,6 @@
 
 
 The code here was tested on Ubuntu 24.04 with ROS2 Jazzy and Gazebo 1.0.7-1noble.
-Please try to match this configuration if you are using your personal computers.
 The code may also work on ROS2 Rolling, but it has not been tested.
 
 #### Pre-requisites (Only for personal computers)
