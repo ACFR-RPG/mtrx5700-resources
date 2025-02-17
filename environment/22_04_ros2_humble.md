@@ -6,7 +6,6 @@
 ### Setting up the framework
 The code we provide for the assignments were tested on Ubuntu 22.04 with ROS2 Humble and Gazebo 11.10.2.
 Please try to match this configuration if you are using your personal computers.
-The code may also work on ROS2 Jazzy, Foxy, but it has not been tested.
 
 #### Pre-requisites (Only for personal computers. If you are using computers in the MXLab, skip this step)
 
