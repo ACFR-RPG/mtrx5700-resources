@@ -1,6 +1,6 @@
 # MTRX5700 Environment setup - README
 
-*WARNING: This environment is not supported in Assignment 2 and Assignment 3 as RealSense Cameras, Tello Drones and Turtlebot 3 are not officially supported for Ubuntu 24.04 and ROS2 Jazzy. Proceed with caution.*
+**WARNING: This environment is not supported in Assignment 2 and Assignment 3 as RealSense Cameras, Tello Drones and Turtlebot 3 are not officially supported for Ubuntu 24.04 and ROS2 Jazzy. Proceed with caution.**
 
 ## Instructions
 

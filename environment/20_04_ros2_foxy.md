@@ -1,7 +1,7 @@
 # MTRX5700 Environment setup - README
 
 
-*WARNING: The MXLab computers and Turtlebots are using Ubuntu 22.04 and ROS2 Humble, so any code written in Ubuntu 20.04 with ROS2 Foxy must be transferrable to Ubuntu 22.04 with ROS2 Humble. Proceed with caution.*
+**WARNING: The MXLab computers and Turtlebots are using Ubuntu 22.04 and ROS2 Humble, so any code written in Ubuntu 20.04 with ROS2 Foxy must be transferrable to Ubuntu 22.04 with ROS2 Humble. Proceed with caution.**
 
 ## Instructions
 
