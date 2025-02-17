@@ -202,7 +202,7 @@ ros-jazzy-sensor-msgs \
 ros-jazzy-std-msgs
 
 # # Tello Drones
-# sudo apt install  ros-jazzy-codec-image-transport python3-catkin-tools ros-jazzy-tello-driver ros-jazzy-teleop-twist-keyboard
+# not officially supported on ROS2 Jazzy
 
 # Turtlebot 3
 sudo apt-get install ros-jazzy-joy ros-jazzy-teleop-twist-joy \
