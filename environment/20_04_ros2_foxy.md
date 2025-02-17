@@ -1,5 +1,8 @@
 # MTRX5700 Environment setup - README
 
+
+*WARNING: The MXLab computers and Turtlebots are using Ubuntu 22.04 and ROS2 Humble, so any code written in Ubuntu 20.04 with ROS2 Foxy must be transferrable to Ubuntu 22.04 with ROS2 Humble. Proceed with caution.*
+
 ## Instructions
 
 
@@ -8,7 +11,7 @@ The code we provide for the assignments were tested on Ubuntu 20.04 with ROS2 Fo
 Please try to match this configuration if you are using your personal computers.
 The code may also work on ROS2 Galactic (not supported), but it has not been tested.
 
-#### Pre-requisites (Only for personal computers. If you are using computers in the MXLab, skip this step)
+#### Pre-requisites (Only for personal computers)
 
 1. Install [Ubuntu 20.04](https://releases.ubuntu.com/focal/).
 2. Install ROS2 Foxy following the instructions [here](https://docs.ros.org/en/foxy/Installation/Alternatives/Ubuntu-Development-Setup.html).
@@ -278,7 +281,7 @@ rosdep update # do not run as sudo
 ```
 
 
-#### From here onwards, the steps apply to both personal computers and lab computers
+#### From here onwards, these steps apply to personal computers only.
 
 #### Setting up colcon workspace
 The computers in MXLab have the above configuration. All the dependencies for this code to run have been installed. Please type the following commands in a terminal one after the other.

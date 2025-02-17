@@ -1,14 +1,18 @@
 # MTRX5700 Environment setup - README
 
+*WARNING: This environment is not supported in Assignment 2 and Assignment 3 as RealSense Cameras, Tello Drones and Turtlebot 3 are not officially supported for Ubuntu 24.04 and ROS2 Jazzy. Proceed with caution.*
+
 ## Instructions
 
 
 ### Setting up the framework
-The code we provide for the assignments were tested on Ubuntu 24.04 with ROS2 Jazzy and Gazebo 1.0.7-1noble.
+
+
+The code here was tested on Ubuntu 24.04 with ROS2 Jazzy and Gazebo 1.0.7-1noble.
 Please try to match this configuration if you are using your personal computers.
 The code may also work on ROS2 Rolling, but it has not been tested.
 
-#### Pre-requisites (Only for personal computers. If you are using computers in the MXLab, skip this step)
+#### Pre-requisites (Only for personal computers)
 
 1. Install [Ubuntu 24.04](https://releases.ubuntu.com/noble/).
 2. Install ROS2 Jazzy following the instructions [here](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html).
@@ -201,24 +205,15 @@ ros-jazzy-rospy \
 ros-jazzy-sensor-msgs \
 ros-jazzy-std-msgs
 
-# # Tello Drones
-# not officially supported on ROS2 Jazzy
+# Tello Drones (not officially supported on ROS2 Jazzy)
 
-# Turtlebot 3
-sudo apt-get install ros-jazzy-joy ros-jazzy-teleop-twist-joy \
-  ros-jazzy-teleop-twist-keyboard ros-jazzy-laser-proc \
-  ros-jazzy-rgbd-launch ros-jazzy-rosserial-arduino \
-  ros-jazzy-rosserial-python ros-jazzy-rosserial-client \
-  ros-jazzy-rosserial-msgs ros-jazzy-amcl ros-jazzy-map-server \
-  ros-jazzy-move-base ros-jazzy-urdf ros-jazzy-xacro \
-  ros-jazzy-compressed-image-transport ros-jazzy-rqt* ros-jazzy-rviz \
-  ros-jazzy-gmapping ros-jazzy-navigation ros-jazzy-interactive-markers
+# Turtlebot 3 (not officially supported on ROS2 Jazzy)
 
 sudo apt install ros-jazzy-dynamixel-sdk
 sudo apt install ros-jazzy-turtlebot3-msgs
 sudo apt install ros-jazzy-turtlebot3
 
-# Pip installs (Machine learning, visualisation)
+# Pip installs (Machine learning, visualisation) - Python environments are mandatory for non-apt packages in Ubuntu 24.04. You can alternatively use anaconda.
 sudo apt-get install python3-pip
 sudo apt install python3-ipython jupyter
 sudo apt install python3-numpy python3-skimage-lib python3-pandas python3-matplotlib python3-scipy
@@ -226,7 +221,7 @@ python3 -m venv ~/machinelearning_env && ~/machinelearning_env/bin/pip install t
 sudo apt install python3-opencv
 
 
-# GTSAM Install (https://launchpad.net/~borglab/+archive/ubuntu/gtsam-release-4.2?field.series_filter=jammy)
+# GTSAM Install
 sudo apt install libgtsam-dev
 
 
@@ -264,10 +259,10 @@ rosdep update # do not run as sudo
 ```
 
 
-#### From here onwards, the steps apply to both personal computers and lab computers
+#### From here onwards, these steps apply to personal computers only.
 
 #### Setting up colcon workspace
-The computers in MXLab have the above configuration. All the dependencies for this code to run have been installed. Please type the following commands in a terminal one after the other.
+Please type the following commands in a terminal one after the other.
 1. Source ROS2 commands. (Must run this in each new bash terminal!)
 ```bash
 source /opt/ros/jazzy/setup.bash
@@ -278,7 +273,7 @@ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc && source /opt/ros/jazzy/se
 ```
 
 2. Create and initialise a new colcon workspace. You may choose any name you like.
-Here we chose **`ros2_mtrx5700ws`** and it is located in the home directory. The standard naming convention is `ros2_ws`.
+Here we choose **`ros2_mtrx5700ws`** and it is located in the home directory. The standard naming convention is `ros2_ws`.
 ```bash
 mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws
 
