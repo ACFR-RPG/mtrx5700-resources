@@ -114,7 +114,7 @@ mkdir build
 cd build
 cmake ..
 make check
-make install
+sudo make install
 cd 
 
 # Arduino IDE
