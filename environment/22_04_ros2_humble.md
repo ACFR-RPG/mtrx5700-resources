@@ -115,7 +115,6 @@ cd build
 cmake ..
 make check
 sudo make install
-cd 
 
 # Arduino IDE
 sudo snap install arduino
