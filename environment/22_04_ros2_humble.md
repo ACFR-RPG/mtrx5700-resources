@@ -84,21 +84,10 @@ sudo apt install ros-humble-desktop-full
 sudo apt-get install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-clearpath-ros2-socketcan-interface ros-humble-moveit ros-humble-moveit-visual-tools ros-humble-moveit-ros-control-interface  ros-humble-moveit-resources ros-humble-derived-object-msgs ros-humble-gazebo-ros ros-humble-gazebo-ros2-control ros-humble-tf2-eigen ros-humble-actionlib-msgs ros-humble-control-msgs ros-humble-controller-interface ros-humble-controller-manager ros-humble-effort-controllers ros-humble-geometry-msgs ros-humble-hardware-interface ros-humble-ur-msgs ros-humble-ur-client-library ros-humble-ur-dashboard-msgs ros-humble-ur-description ros-humble-kinematics-interface-kdl python3-pymodbus ros-humble-diagnostic-updater
 
 # Tello Drones
-sudo apt install  ros-humble-codec-image-transport python3-catkin-tools ros-humble-tello-driver ros-humble-teleop-twist-keyboard
+sudo apt install ros-humble-as2-platform-tello ros-humble-teleop-twist-keyboard
 
 # Turtlebot 3
-sudo apt-get install ros-humble-joy ros-humble-teleop-twist-joy \
-  ros-humble-teleop-twist-keyboard ros-humble-laser-proc \
-  ros-humble-rgbd-launch ros-humble-rosserial-arduino \
-  ros-humble-rosserial-python ros-humble-rosserial-client \
-  ros-humble-rosserial-msgs ros-humble-amcl ros-humble-map-server \
-  ros-humble-move-base ros-humble-urdf ros-humble-xacro \
-  ros-humble-compressed-image-transport ros-humble-rqt* ros-humble-rviz \
-  ros-humble-gmapping ros-humble-navigation ros-humble-interactive-markers
-
-sudo apt install ros-humble-dynamixel-sdk
-sudo apt install ros-humble-turtlebot3-msgs
-sudo apt install ros-humble-turtlebot3
+sudo apt-get install ros-humble-joy ros-humble-teleop-twist-joy ros-humble-teleop-twist-keyboard ros-humble-laser-proc ros-humble-nav2-amcl ros-humble-nav2-map-server ros-humble-urdf ros-humble-xacro ros-humble-compressed-image-transport ros-humble-rqt* ros-humble-rviz2 ros-humble-navigation2 ros-humble-interactive-markers ros-humble-dynamixel-sdk ros-humble-turtlebot3-msgs ros-humble-turtlebot3
 
 # OpenSLAM GMapping
 mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws/src
