@@ -81,124 +81,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update
 
 sudo apt install ros-humble-desktop-full
-sudo apt install ros-humble-ros-tutorials
-sudo apt-get install ros-humble-ros-control ros-humble-ros-controllers ros-humble-soem ros-humble-socketcan-interface ros-humble-moveit ros-humble-moveit-commander ros-humble-moveit-visual-tools ros-humble-moveit-python ros-humble-moveit-sim-controller ros-humble-moveit-resources ros-humble-actionlib ros-humble-derived-object-msgs ros-humble-gazebo-ros ros-humble-gazebo-ros-control ros-humble-eigen-conversions ros-humble-actionlib ros-humble-actionlib-msgs ros-humble-control-msgs ros-humble-controller-interface ros-humble-controller-manager ros-humble-dynamic-reconfigure ros-humble-effort-controllers ros-humble-force-torque-sensor-controller ros-humble-gazebo-ros ros-humble-gazebo-ros-control ros-humble-geometry-msgs ros-humble-hardware-interface ros-humble-joint-state-controller ros-humble-joint-state-publisher ros-humble-joint-trajectory-controller ros-humble-message-generation ros-humble-message-runtime ros-humble-moveit-core ros-humble-moveit-fake-controller-manager ros-humble-moveit-kinematics ros-humble-moveit-planners-ompl ros-humble-moveit-ros-manipulation ros-humble-moveit-ros-move-group ros-humble-moveit-ros-planning ros-humble-moveit-ros-visualization ros-humble-moveit-simple-controller-manager ros-humble-pluginlib ros-humble-realtime-tools ros-humble-robot-state-publisher ros-humble-roscpp ros-humble-sensor-msgs ros-humble-std-srvs ros-humble-tf ros-humble-tf-conversions ros-humble-tf2-geometry-msgs ros-humble-tf2-msgs ros-humble-tf2-ros ros-humble-trajectory-msgs ros-humble-urdf ros-humble-velocity-controllers ros-humble-xacro ros-humble-ur-msgs ros-humble-std-msgs ros-humble-controller-manager-msgs
-
-sudo apt install ros-humble-industrial-robot-status-interface \
-ros-humble-actionlib \
-ros-humble-control-msgs \
-ros-humble-controller-manager \
-ros-humble-controller-manager-msgs \
-ros-humble-geometry-msgs \
-ros-humble-hardware-interface \
-ros-humble-kdl-parser \
-ros-humble-pass-through-controllers \
-ros-humble-pluginlib \
-ros-humble-scaled-joint-trajectory-controller \
-ros-humble-sensor-msgs \
-ros-humble-speed-scaling-interface \
-ros-humble-speed-scaling-state-controller \
-ros-humble-std-srvs \
-ros-humble-tf2-geometry-msgs \
-ros-humble-tf2-msgs \
-ros-humble-tf \
-ros-humble-trajectory-msgs \
-ros-humble-ur-client-library \
-ros-humble-ur-dashboard-msgs \
-ros-humble-ur-msgs \
-ros-humble-cartesian-trajectory-controller \
-ros-humble-force-torque-sensor-controller \
-ros-humble-industrial-robot-status-controller \
-ros-humble-joint-state-controller \
-ros-humble-joint-trajectory-controller \
-ros-humble-robot-state-publisher \
-ros-humble-twist-controller \
-ros-humble-ur-description \
-ros-humble-velocity-controllers \
-ros-humble-message-generation \
-ros-humble-gazebo-ros \
-ros-humble-message-runtime \
-ros-humble-gazebo-ros \
-ros-humble-message-generation \
-ros-humble-actionlib-msgs \
-ros-humble-catkin \
-ros-humble-roscpp \
-ros-humble-rosunit \
-ros-humble-moveit-core \
-ros-humble-moveit-kinematics \
-ros-humble-moveit-ros-planning \
-ros-humble-roscpp \
-ros-humble-geometry-msgs \
-ros-humble-pluginlib \
-ros-humble-tf-conversions \
-ros-humble-rospy \
-ros-humble-roslaunch \
-ros-humble-controller-manager \
-ros-humble-effort-controllers \
-ros-humble-gazebo-ros \
-ros-humble-gazebo-ros-control \
-ros-humble-joint-state-controller \
-ros-humble-joint-trajectory-controller \
-ros-humble-position-controllers \
-ros-humble-robot-state-publisher \
-ros-humble-joint-state-publisher-gui \
-ros-humble-robot-state-publisher \
-ros-humble-rviz \
-ros-humble-urdf \
-ros-humble-xacro \
-ros-humble-roslaunch \
-ros-humble-joint-state-publisher \
-ros-humble-joint-state-publisher-gui \
-ros-humble-moveit-fake-controller-manager \
-ros-humble-moveit-planners-ompl \
-ros-humble-moveit-ros-benchmarks \
-ros-humble-moveit-ros-move-group \
-ros-humble-moveit-ros-visualization \
-ros-humble-moveit-ros-warehouse \
-ros-humble-warehouse-ros-mongo \
-ros-humble-moveit-setup-assistant \
-ros-humble-moveit-simple-controller-manager \
-ros-humble-robot-state-publisher \
-ros-humble-rviz \
-ros-humble-tf2-ros \
-ros-humble-trac-ik-kinematics-plugin \
-ros-humble-ur-description \
-ros-humble-xacro \
-ros-humble-roslaunch \
-ros-humble-catkin \
-ros-humble-catkin \
-python3-pymodbus \
-ros-humble-rospy \
-ros-humble-roscpp \
-ros-humble-std-msgs \
-ros-humble-message-generation \
-ros-humble-message-runtime \
-ros-humble-soem \
-ros-humble-roscpp \
-qtbase5-dev \
-ros-humble-rviz \
-ros-humble-controller-manager \
-ros-humble-diagnostic-updater \
-ros-humble-dynamic-reconfigure \
-ros-humble-hardware-interface \
-ros-humble-roscpp \
-ros-humble-rospy \
-ros-humble-socketcan-interface \
-ros-humble-std-srvs \
-ros-humble-message-generation \
-ros-humble-geometry-msgs \
-ros-humble-sensor-msgs \
-ros-humble-std-msgs \
-ros-humble-cv-bridge \
-ros-humble-dynamic-reconfigure \
-ros-humble-geometry-msgs \
-ros-humble-codec-image-transport \
-ros-humble-image-transport \
-ros-humble-message-runtime \
-ros-humble-nav-msgs \
-ros-humble-rospy \
-ros-humble-sensor-msgs \
-ros-humble-std-msgs
+sudo apt-get install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-clearpath-ros2-socketcan-interface ros-humble-moveit ros-humble-moveit-visual-tools ros-humble-moveit-ros-control-interface  ros-humble-moveit-resources ros-humble-derived-object-msgs ros-humble-gazebo-ros ros-humble-gazebo-ros2-control ros-humble-tf2-eigen ros-humble-actionlib-msgs ros-humble-control-msgs ros-humble-controller-interface ros-humble-controller-manager ros-humble-effort-controllers ros-humble-geometry-msgs ros-humble-hardware-interface ros-humble-ur-msgs ros-humble-ur-client-library ros-humble-ur-dashboard-msgs ros-humble-ur-description ros-humble-kinematics-interface-kdl python3-pymodbus ros-humble-diagnostic-updater
 
 # Tello Drones
 sudo apt install  ros-humble-codec-image-transport python3-catkin-tools ros-humble-tello-driver ros-humble-teleop-twist-keyboard
@@ -216,6 +99,10 @@ sudo apt-get install ros-humble-joy ros-humble-teleop-twist-joy \
 sudo apt install ros-humble-dynamixel-sdk
 sudo apt install ros-humble-turtlebot3-msgs
 sudo apt install ros-humble-turtlebot3
+
+# OpenSLAM GMapping
+mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws/src
+git clone https://github.com/GMHadou/slam_gmapping_Humble
 
 # Pip installs (Machine learning, visualisation)
 sudo apt-get install python3-pip

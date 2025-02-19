@@ -84,141 +84,17 @@ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
 
-sudo apt install ros-foxy-desktop-full
-sudo apt-get install ros-foxy-ros2-control ros-foxy-ros-controllers ros-foxy-clearpath-ros2-socketcan-interface ros-foxy-moveit ros-foxy-moveit-visual-tools ros-foxy-moveit-sim-controller ros-foxy-moveit-resources ros-foxy-actionlib ros-foxy-derived-object-msgs ros-foxy-gazebo-ros ros-foxy-gazebo-ros-control ros-foxy-eigen-conversions ros-foxy-actionlib ros-foxy-actionlib-msgs ros-foxy-control-msgs ros-foxy-controller-interface ros-foxy-controller-manager ros-foxy-dynamic-reconfigure ros-foxy-effort-controllers ros-foxy-force-torque-sensor-controller ros-foxy-gazebo-ros ros-foxy-gazebo-ros-control ros-foxy-geometry-msgs ros-foxy-hardware-interface ros-foxy-joint-state-controller ros-foxy-joint-state-publisher ros-foxy-joint-trajectory-controller ros-foxy-message-generation ros-foxy-message-runtime ros-foxy-moveit-core ros-foxy-moveit-fake-controller-manager ros-foxy-moveit-kinematics ros-foxy-moveit-planners-ompl ros-foxy-moveit-ros-manipulation ros-foxy-moveit-ros-move-group ros-foxy-moveit-ros-planning ros-foxy-moveit-ros-visualization ros-foxy-moveit-simple-controller-manager ros-foxy-pluginlib ros-foxy-realtime-tools ros-foxy-robot-state-publisher ros-foxy-roscpp ros-foxy-sensor-msgs ros-foxy-std-srvs ros-foxy-tf ros-foxy-tf-conversions ros-foxy-tf2-geometry-msgs ros-foxy-tf2-msgs ros-foxy-tf2-ros ros-foxy-trajectory-msgs ros-foxy-urdf ros-foxy-velocity-controllers ros-foxy-xacro ros-foxy-ur-msgs ros-foxy-std-msgs ros-foxy-controller-manager-msgs
+sudo apt install ros-foxy-desktop
+sudo apt-get install ros-foxy-ros2-control ros-foxy-ros2-controllers ros-foxy-moveit ros-foxy-moveit-resources ros-foxy-derived-object-msgs ros-foxy-gazebo-ros ros-foxy-gazebo-ros2-control ros-foxy-tf2-eigen ros-foxy-actionlib-msgs ros-foxy-control-msgs ros-foxy-controller-interface ros-foxy-controller-manager ros-foxy-effort-controllers ros-foxy-geometry-msgs ros-foxy-hardware-interface ros-foxy-ur-msgs ros-foxy-ur-client-library ros-foxy-ur-dashboard-msgs ros-foxy-ur-description python3-pymodbus ros-foxy-diagnostic-updater
 
-sudo apt install ros-foxy-industrial-robot-status-interface \
-ros-foxy-actionlib \
-ros-foxy-control-msgs \
-ros-foxy-controller-manager \
-ros-foxy-controller-manager-msgs \
-ros-foxy-geometry-msgs \
-ros-foxy-hardware-interface \
-ros-foxy-kdl-parser \
-ros-foxy-pass-through-controllers \
-ros-foxy-pluginlib \
-ros-foxy-scaled-joint-trajectory-controller \
-ros-foxy-sensor-msgs \
-ros-foxy-speed-scaling-interface \
-ros-foxy-speed-scaling-state-controller \
-ros-foxy-std-srvs \
-ros-foxy-tf2-geometry-msgs \
-ros-foxy-tf2-msgs \
-ros-foxy-tf \
-ros-foxy-trajectory-msgs \
-ros-foxy-ur-client-library \
-ros-foxy-ur-dashboard-msgs \
-ros-foxy-ur-msgs \
-ros-foxy-cartesian-trajectory-controller \
-ros-foxy-force-torque-sensor-controller \
-ros-foxy-industrial-robot-status-controller \
-ros-foxy-joint-state-controller \
-ros-foxy-joint-trajectory-controller \
-ros-foxy-robot-state-publisher \
-ros-foxy-twist-controller \
-ros-foxy-ur-description \
-ros-foxy-velocity-controllers \
-ros-foxy-message-generation \
-ros-foxy-gazebo-ros \
-ros-foxy-message-runtime \
-ros-foxy-gazebo-ros \
-ros-foxy-message-generation \
-ros-foxy-actionlib-msgs \
-ros-foxy-catkin \
-ros-foxy-roscpp \
-ros-foxy-rosunit \
-ros-foxy-moveit-core \
-ros-foxy-moveit-kinematics \
-ros-foxy-moveit-ros-planning \
-ros-foxy-roscpp \
-ros-foxy-geometry-msgs \
-ros-foxy-pluginlib \
-ros-foxy-tf-conversions \
-ros-foxy-rospy \
-ros-foxy-roslaunch \
-ros-foxy-controller-manager \
-ros-foxy-effort-controllers \
-ros-foxy-gazebo-ros \
-ros-foxy-gazebo-ros-control \
-ros-foxy-joint-state-controller \
-ros-foxy-joint-trajectory-controller \
-ros-foxy-position-controllers \
-ros-foxy-robot-state-publisher \
-ros-foxy-joint-state-publisher-gui \
-ros-foxy-robot-state-publisher \
-ros-foxy-rviz \
-ros-foxy-urdf \
-ros-foxy-xacro \
-ros-foxy-roslaunch \
-ros-foxy-joint-state-publisher \
-ros-foxy-joint-state-publisher-gui \
-ros-foxy-moveit-fake-controller-manager \
-ros-foxy-moveit-planners-ompl \
-ros-foxy-moveit-ros-benchmarks \
-ros-foxy-moveit-ros-move-group \
-ros-foxy-moveit-ros-visualization \
-ros-foxy-moveit-ros-warehouse \
-ros-foxy-warehouse-ros-mongo \
-ros-foxy-moveit-setup-assistant \
-ros-foxy-moveit-simple-controller-manager \
-ros-foxy-robot-state-publisher \
-ros-foxy-rviz \
-ros-foxy-tf2-ros \
-ros-foxy-trac-ik-kinematics-plugin \
-ros-foxy-ur-description \
-ros-foxy-xacro \
-ros-foxy-roslaunch \
-ros-foxy-catkin \
-ros-foxy-catkin \
-python3-pymodbus \
-ros-foxy-rospy \
-ros-foxy-roscpp \
-ros-foxy-std-msgs \
-ros-foxy-message-generation \
-ros-foxy-message-runtime \
-ros-foxy-soem \
-ros-foxy-roscpp \
-qtbase5-dev \
-ros-foxy-rviz \
-ros-foxy-controller-manager \
-ros-foxy-diagnostic-updater \
-ros-foxy-dynamic-reconfigure \
-ros-foxy-hardware-interface \
-ros-foxy-roscpp \
-ros-foxy-rospy \
-ros-foxy-socketcan-interface \
-ros-foxy-std-srvs \
-ros-foxy-message-generation \
-ros-foxy-geometry-msgs \
-ros-foxy-sensor-msgs \
-ros-foxy-std-msgs \
-ros-foxy-cv-bridge \
-ros-foxy-dynamic-reconfigure \
-ros-foxy-geometry-msgs \
-ros-foxy-codec-image-transport \
-ros-foxy-image-transport \
-ros-foxy-message-runtime \
-ros-foxy-nav-msgs \
-ros-foxy-rospy \
-ros-foxy-sensor-msgs \
-ros-foxy-std-msgs
-
-# Tello Drones
-# sudo apt install ros-foxy-as2-platform-tello ros-foxy-teleop-twist-keyboard
+# Tello Drones (does not exist for foxy, unofficial alternative here: https://github.com/tentone/tello-ros2)
 
 # Turtlebot 3
-sudo apt-get install ros-foxy-joy ros-foxy-teleop-twist-joy \
-  ros-foxy-teleop-twist-keyboard ros-foxy-laser-proc \
-  ros-foxy-rgbd-launch ros-foxy-rosserial-arduino \
-  ros-foxy-rosserial-python ros-foxy-rosserial-client \
-  ros-foxy-rosserial-msgs ros-foxy-amcl ros-foxy-map-server \
-  ros-foxy-move-base ros-foxy-urdf ros-foxy-xacro \
-  ros-foxy-compressed-image-transport ros-foxy-rqt* ros-foxy-rviz \
-  ros-foxy-gmapping ros-foxy-navigation ros-foxy-interactive-markers
+sudo apt-get install ros-foxy-joy ros-foxy-teleop-twist-joy ros-foxy-teleop-twist-keyboard ros-foxy-laser-proc ros-foxy-nav2-amcl ros-foxy-nav2-map-server ros-foxy-urdf ros-foxy-xacro ros-foxy-compressed-image-transport ros-foxy-rqt* ros-foxy-rviz2 ros-foxy-navigation2 ros-foxy-interactive-markers ros-foxy-dynamixel-sdk ros-foxy-turtlebot3-msgs ros-foxy-turtlebot3
 
-sudo apt install ros-foxy-dynamixel-sdk
-sudo apt install ros-foxy-turtlebot3-msgs
-sudo apt install ros-foxy-turtlebot3
+# OpenSLAM GMapping
+mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws/src
+git clone https://github.com/Project-MANAS/slam_gmapping
 
 # Pip installs (Machine learning, visualisation)
 sudo apt-get install python3-pip
@@ -236,6 +112,7 @@ pip3 install polyscope
 # GTSAM Install (https://gtsam.org/get_started/)
 sudo add-apt-repository ppa:borglab/gtsam-release-4.0
 sudo apt install libgtsam-dev libgtsam-unstable-dev
+
 
 
 # Arduino IDE

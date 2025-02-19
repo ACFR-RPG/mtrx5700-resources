@@ -85,132 +85,13 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update
 
 sudo apt install ros-jazzy-desktop-full
-sudo apt install ros-jazzy-ros-tutorials
-sudo apt-get install ros-jazzy-ros-control ros-jazzy-ros-controllers ros-jazzy-soem ros-jazzy-socketcan-interface ros-jazzy-moveit ros-jazzy-moveit-commander ros-jazzy-moveit-visual-tools ros-jazzy-moveit-python ros-jazzy-moveit-sim-controller ros-jazzy-moveit-resources ros-jazzy-actionlib ros-jazzy-derived-object-msgs ros-jazzy-gazebo-ros ros-jazzy-gazebo-ros-control ros-jazzy-eigen-conversions ros-jazzy-actionlib ros-jazzy-actionlib-msgs ros-jazzy-control-msgs ros-jazzy-controller-interface ros-jazzy-controller-manager ros-jazzy-dynamic-reconfigure ros-jazzy-effort-controllers ros-jazzy-force-torque-sensor-controller ros-jazzy-gazebo-ros ros-jazzy-gazebo-ros-control ros-jazzy-geometry-msgs ros-jazzy-hardware-interface ros-jazzy-joint-state-controller ros-jazzy-joint-state-publisher ros-jazzy-joint-trajectory-controller ros-jazzy-message-generation ros-jazzy-message-runtime ros-jazzy-moveit-core ros-jazzy-moveit-fake-controller-manager ros-jazzy-moveit-kinematics ros-jazzy-moveit-planners-ompl ros-jazzy-moveit-ros-manipulation ros-jazzy-moveit-ros-move-group ros-jazzy-moveit-ros-planning ros-jazzy-moveit-ros-visualization ros-jazzy-moveit-simple-controller-manager ros-jazzy-pluginlib ros-jazzy-realtime-tools ros-jazzy-robot-state-publisher ros-jazzy-roscpp ros-jazzy-sensor-msgs ros-jazzy-std-srvs ros-jazzy-tf ros-jazzy-tf-conversions ros-jazzy-tf2-geometry-msgs ros-jazzy-tf2-msgs ros-jazzy-tf2-ros ros-jazzy-trajectory-msgs ros-jazzy-urdf ros-jazzy-velocity-controllers ros-jazzy-xacro ros-jazzy-ur-msgs ros-jazzy-std-msgs ros-jazzy-controller-manager-msgs
-
-sudo apt install ros-jazzy-industrial-robot-status-interface \
-ros-jazzy-actionlib \
-ros-jazzy-control-msgs \
-ros-jazzy-controller-manager \
-ros-jazzy-controller-manager-msgs \
-ros-jazzy-geometry-msgs \
-ros-jazzy-hardware-interface \
-ros-jazzy-kdl-parser \
-ros-jazzy-pass-through-controllers \
-ros-jazzy-pluginlib \
-ros-jazzy-scaled-joint-trajectory-controller \
-ros-jazzy-sensor-msgs \
-ros-jazzy-speed-scaling-interface \
-ros-jazzy-speed-scaling-state-controller \
-ros-jazzy-std-srvs \
-ros-jazzy-tf2-geometry-msgs \
-ros-jazzy-tf2-msgs \
-ros-jazzy-tf \
-ros-jazzy-trajectory-msgs \
-ros-jazzy-ur-client-library \
-ros-jazzy-ur-dashboard-msgs \
-ros-jazzy-ur-msgs \
-ros-jazzy-cartesian-trajectory-controller \
-ros-jazzy-force-torque-sensor-controller \
-ros-jazzy-industrial-robot-status-controller \
-ros-jazzy-joint-state-controller \
-ros-jazzy-joint-trajectory-controller \
-ros-jazzy-robot-state-publisher \
-ros-jazzy-twist-controller \
-ros-jazzy-ur-description \
-ros-jazzy-velocity-controllers \
-ros-jazzy-message-generation \
-ros-jazzy-gazebo-ros \
-ros-jazzy-message-runtime \
-ros-jazzy-gazebo-ros \
-ros-jazzy-message-generation \
-ros-jazzy-actionlib-msgs \
-ros-jazzy-catkin \
-ros-jazzy-roscpp \
-ros-jazzy-rosunit \
-ros-jazzy-moveit-core \
-ros-jazzy-moveit-kinematics \
-ros-jazzy-moveit-ros-planning \
-ros-jazzy-roscpp \
-ros-jazzy-geometry-msgs \
-ros-jazzy-pluginlib \
-ros-jazzy-tf-conversions \
-ros-jazzy-rospy \
-ros-jazzy-roslaunch \
-ros-jazzy-controller-manager \
-ros-jazzy-effort-controllers \
-ros-jazzy-gazebo-ros \
-ros-jazzy-gazebo-ros-control \
-ros-jazzy-joint-state-controller \
-ros-jazzy-joint-trajectory-controller \
-ros-jazzy-position-controllers \
-ros-jazzy-robot-state-publisher \
-ros-jazzy-joint-state-publisher-gui \
-ros-jazzy-robot-state-publisher \
-ros-jazzy-rviz \
-ros-jazzy-urdf \
-ros-jazzy-xacro \
-ros-jazzy-roslaunch \
-ros-jazzy-joint-state-publisher \
-ros-jazzy-joint-state-publisher-gui \
-ros-jazzy-moveit-fake-controller-manager \
-ros-jazzy-moveit-planners-ompl \
-ros-jazzy-moveit-ros-benchmarks \
-ros-jazzy-moveit-ros-move-group \
-ros-jazzy-moveit-ros-visualization \
-ros-jazzy-moveit-ros-warehouse \
-ros-jazzy-warehouse-ros-mongo \
-ros-jazzy-moveit-setup-assistant \
-ros-jazzy-moveit-simple-controller-manager \
-ros-jazzy-robot-state-publisher \
-ros-jazzy-rviz \
-ros-jazzy-tf2-ros \
-ros-jazzy-trac-ik-kinematics-plugin \
-ros-jazzy-ur-description \
-ros-jazzy-xacro \
-ros-jazzy-roslaunch \
-ros-jazzy-catkin \
-ros-jazzy-catkin \
-python3-pymodbus \
-ros-jazzy-rospy \
-ros-jazzy-roscpp \
-ros-jazzy-std-msgs \
-ros-jazzy-message-generation \
-ros-jazzy-message-runtime \
-ros-jazzy-soem \
-ros-jazzy-roscpp \
-qtbase5-dev \
-ros-jazzy-rviz \
-ros-jazzy-controller-manager \
-ros-jazzy-diagnostic-updater \
-ros-jazzy-dynamic-reconfigure \
-ros-jazzy-hardware-interface \
-ros-jazzy-roscpp \
-ros-jazzy-rospy \
-ros-jazzy-socketcan-interface \
-ros-jazzy-std-srvs \
-ros-jazzy-message-generation \
-ros-jazzy-geometry-msgs \
-ros-jazzy-sensor-msgs \
-ros-jazzy-std-msgs \
-ros-jazzy-cv-bridge \
-ros-jazzy-dynamic-reconfigure \
-ros-jazzy-geometry-msgs \
-ros-jazzy-codec-image-transport \
-ros-jazzy-image-transport \
-ros-jazzy-message-runtime \
-ros-jazzy-nav-msgs \
-ros-jazzy-rospy \
-ros-jazzy-sensor-msgs \
-ros-jazzy-std-msgs
+sudo apt-get install ros-jazzy-ros2-control ros-jazzy-ros2-controllers ros-jazzy-clearpath-ros2-socketcan-interface ros-jazzy-moveit ros-jazzy-moveit-visual-tools ros-jazzy-moveit-ros-control-interface  ros-jazzy-moveit-resources ros-jazzy-derived-object-msgs ros-jazzy-ros-gz ros-jazzy-gz-ros2-control ros-jazzy-tf2-eigen ros-jazzy-actionlib-msgs ros-jazzy-control-msgs ros-jazzy-controller-interface ros-jazzy-controller-manager ros-jazzy-effort-controllers ros-jazzy-geometry-msgs ros-jazzy-hardware-interface ros-jazzy-ur-msgs ros-jazzy-ur-client-library ros-jazzy-ur-dashboard-msgs ros-jazzy-ur-description ros-jazzy-kinematics-interface-kdl ros-jazzy-diagnostic-updater
 
 # Tello Drones (not officially supported on ROS2 Jazzy)
 
 # Turtlebot 3 (not officially supported on ROS2 Jazzy)
 
-sudo apt install ros-jazzy-dynamixel-sdk
-sudo apt install ros-jazzy-turtlebot3-msgs
-sudo apt install ros-jazzy-turtlebot3
+# OpenSLAM GMapping (not yet supported on ROS2 Jazzy)
 
 # Pip installs (Machine learning, visualisation) - Python environments are mandatory for non-apt packages in Ubuntu 24.04. You can alternatively use anaconda.
 sudo apt-get install python3-pip
