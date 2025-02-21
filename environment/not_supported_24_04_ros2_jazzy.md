@@ -91,8 +91,6 @@ sudo apt-get install ros-jazzy-ros2-control ros-jazzy-ros2-controllers ros-jazzy
 
 # Turtlebot 3 (not officially supported on ROS2 Jazzy)
 
-# OpenSLAM GMapping (not yet supported on ROS2 Jazzy)
-
 # Pip installs (Machine learning, visualisation) - Python environments are mandatory for non-apt packages in Ubuntu 24.04. You can alternatively use anaconda.
 sudo apt-get install python3-pip
 sudo apt install python3-ipython jupyter
