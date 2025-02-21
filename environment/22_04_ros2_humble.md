@@ -163,7 +163,7 @@ The computers in MXLab have the above configuration. All the dependencies for th
 ```bash
 source /opt/ros/humble/setup.bash
 ```
-On your personal computer, you can automate the command to run in each new bash terminal:
+On your personal computer and MXLab account, you can automate the command to run in each new bash terminal:
 ```bash
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && source /opt/ros/humble/setup.bash
 ```
