@@ -92,10 +92,6 @@ sudo apt-get install ros-foxy-ros2-control ros-foxy-ros2-controllers ros-foxy-mo
 # Turtlebot 3
 sudo apt-get install ros-foxy-joy ros-foxy-teleop-twist-joy ros-foxy-teleop-twist-keyboard ros-foxy-laser-proc ros-foxy-nav2-amcl ros-foxy-nav2-map-server ros-foxy-urdf ros-foxy-xacro ros-foxy-compressed-image-transport ros-foxy-rqt* ros-foxy-rviz2 ros-foxy-navigation2 ros-foxy-interactive-markers ros-foxy-dynamixel-sdk ros-foxy-turtlebot3*
 
-# OpenSLAM GMapping
-mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws/src
-git clone https://github.com/Project-MANAS/slam_gmapping
-
 # Pip installs (Machine learning, visualisation)
 sudo apt-get install python3-pip
 pip3 install jupyterlab
