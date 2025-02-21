@@ -87,7 +87,7 @@ sudo apt-get install ros-humble-ros2-control ros-humble-ros2-controllers ros-hum
 sudo apt install ros-humble-as2-platform-tello ros-humble-teleop-twist-keyboard
 
 # Turtlebot 3
-sudo apt-get install ros-humble-joy ros-humble-teleop-twist-joy ros-humble-teleop-twist-keyboard ros-humble-laser-proc ros-humble-nav2-amcl ros-humble-nav2-map-server ros-humble-urdf ros-humble-xacro ros-humble-compressed-image-transport ros-humble-rqt* ros-humble-rviz2 ros-humble-navigation2 ros-humble-interactive-markers ros-humble-dynamixel-sdk ros-humble-turtlebot3-msgs ros-humble-turtlebot3
+sudo apt-get install ros-humble-joy ros-humble-teleop-twist-joy ros-humble-teleop-twist-keyboard ros-humble-laser-proc ros-humble-nav2-amcl ros-humble-nav2-map-server ros-humble-urdf ros-humble-xacro ros-humble-compressed-image-transport ros-humble-rqt* ros-humble-rviz2 ros-humble-navigation2 ros-humble-interactive-markers ros-humble-dynamixel-sdk ros-humble-turtlebot3*
 
 # OpenSLAM GMapping
 mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws/src
