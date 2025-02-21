@@ -1,6 +1,6 @@
 # ROBOTIS Turtlebot 3
 
-ROBOTIS provides excellent documentation for an initial set-up of the Turtlebot 3. We direct your to their documentation [found here](https://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#bringup).
+ROBOTIS provides excellent documentation for an initial set-up of the Turtlebot 3. We direct your to their documentation [found here](https://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#bringup). **WARNING: Please ensure you click on 'Humble' for the correct instructions.**
 
 ## On-board Compute
 The Turtlebot 3's used in this course are equipped with a Raspberry Pi 3 Model B+. This does have enough compute for basic computer vision and data processing on-board. It is recommended that you do as much processing on-board the Turtlebot as possible to avoid latency over your network connection.
@@ -24,8 +24,19 @@ Anything marketed as an Arduino sensor is fair game (watch the logic voltage) as
 
 The Raspberry Pi also has a series of USB ports. This means that any number of machine vision cameras with a USB interface may also be installed onto the Turtlebot. An Intel Realsense for example may then be installed onto the Turtlebot to provide directional, dense depth information augmenting the sparse 360deg LiDAR information.
 
-### Camera on Raspiberry Pi 3b + Ubuntu 20.04
-We have installed a full ubuntu system onto the Raspberry Pi's in order to run Ubuntu 20.04 and ROS noetic. This means that, by default, the peripherals required by the camera are not set (and we do not have a raspi-config menu since this is a full ubuntu install).
+## Camera
+
+To turn on the camera after bringing up Turtlebot3, run the following:
+
+```
+ros2 run camera_ros camera_node
+```
+
+This node is documented [here](https://github.com/christianrauch/camera_ros).
+
+<!-- 
+### Camera on Raspiberry Pi 3b + Ubuntu 22.04
+We have installed a full ubuntu system onto the Raspberry Pi's in order to run Ubuntu 22.04 and ROS2 Humble. This means that, by default, the peripherals required by the camera are not set (and we do not have a raspi-config menu since this is a full ubuntu install).
 
 VERY CAREFULLY modify the `/boot/firmware/config.txt` file and scroll down to the section `[all]`. The section should be modified to look like
 ```
@@ -95,4 +106,4 @@ projection_matrix:
   data: [2348.257291, 0, 809.568039, 0, 0, 2344.569053, 563.818346, 0, 0, 0, 1, 0]
 ```
 NOTE: this is just an example set of values.
-Your image width and height must match the actual size of the image and the camera_name should match the frame_id. You can verify that your config file has been loaded successfully by echoing the `/camera/camera_info` topic.
+Your image width and height must match the actual size of the image and the camera_name should match the frame_id. You can verify that your config file has been loaded successfully by echoing the `/camera/camera_info` topic. -->

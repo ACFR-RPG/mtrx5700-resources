@@ -2,13 +2,13 @@
 
 IMPORTANT: Any students wishing to operate a drone in this course must acquire their remotely piloted aircraft (RPA) operator accreditation. This is free, and available online through the Civil Aviation Safety Authority (CASA). Information and an outline of how to obtain this may be found [at this link](https://www.casa.gov.au/drones/get-your-operator-credentials/operator-accreditation).
 
-## ROS
-The Tello drones are not locked to ROS Noetic as we use in this course, however we have only tested their operation through the code provided on Noetic. 
+## ROS2
+The Tello drones are not locked to ROS2 Humble as we use in this course.
 
 Should you wish to use other versions of ROS or ROS2 you will need to source appropriate drivers (or write your own!) to operate the drones.
 
 ## Install and Setup
-Refer to the installation instructions in [the Tello ROS driver repo for this course](https://github.com/ACFR-RPG/tello-driver-ros). 
+Refer to the installation instructions in [the Tello ROS2 driver repo for this course](https://github.com/ACFR-RPG/tello-driver-ros). 
 
 
 ## WiFi Connection

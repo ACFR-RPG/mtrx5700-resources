@@ -7,7 +7,7 @@ IMPORTANT: The resources here may be updated periodically. This is a communal an
 - [UG Formatting Tips and Tricks](https://github.com/nackjaylor/formatting_tips-tricks)
 
 ## Environment Setup
-- [Ubuntu 20.04 Environment (2024)](environment/2004_noetic.txt)
+- [Ubuntu 22.04 Environment (2024)](environment/22_04_ros2_humble.md)
 
 ## Robot Starter Guides
 - [Tello Drone starter guide](quickstarts/tello.md)
