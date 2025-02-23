@@ -11,11 +11,11 @@ Once the robot is powered on, it is good practice to manually freedrive the arm 
 
 
 ## Documentation
-Please note that you should have ros2 humble installed if you are following the environment setup instruction [Ubuntu 22.04 Environment (2025)](../environment/22_04_ros2_humble.md). See the [installation instructions](https://docs.universal-robots.com/Universal_Robots_ROS2_Documentation/doc/ur_robot_driver/ur_robot_driver/doc/installation/installation.html) for more details and source-build instructions, and you are encouraged to read more from this official documentation instead of this "quick start note".
+Please note that you should have ros2 humble already installed, if you are following the environment setup instruction [Ubuntu 22.04 Environment (2025)](../environment/22_04_ros2_humble.md). See the [installation instructions](https://docs.universal-robots.com/Universal_Robots_ROS2_Documentation/doc/ur_robot_driver/ur_robot_driver/doc/installation/installation.html) for more details and source-build instructions, and you are encouraged to read more from this official documentation instead of this "quick start note".
 
 
 ## Dependencies
-Git clone the following repositorties into your workspace ("$COLCON_WS/src")
+The following repositorties from [Universal Robots](https://github.com/UniversalRobots) will be used: 
  - https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver
  - https://github.com/UniversalRobots/Universal_Robots_Client_Library
 
@@ -40,16 +40,16 @@ rosdep install --ignore-src --from-paths src -y
 ```
 
 ## ROS2 Connection
-Onboard the teach pendant there is an `external control` script which needs to be run to enable communcation between the UR5e and ROS. Run this script prior to running the below commands.
+Onboard the teach pendant there is an `external control` script which needs to be run to enable communcation between the UR5e and ROS2. Run this script prior to running the below commands.
 
 ```bash
 # Check the IP and whether calibration for the UR5e is available (ask your tutor).
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=<UR_TYPE> robot_ip:=<IP_OF_THE_ROBOT> launch_rviz:=true
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=<IP_OF_THE_ROBOT> launch_rviz:=true
 ```
 
 To use mocked hardware (a ros2 simulator, capability of ros2_control), use use_mock_hardware argument, like:
 ```bash
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=yyy.yyy.yyy.yyy use_mock_hardware:=true
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=<IP_OF_THE_ROBOT> use_mock_hardware:=true
 ```
 
 For assignments, you may need to run slightly different commands to run the robot. Where this is the case, we will document these inside the appropriate assignment folder.
