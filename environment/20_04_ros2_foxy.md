@@ -59,6 +59,19 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 && sudo apt update \
 && sudo apt install gh -y
 
+
+
+# ROS2 Foxy
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+sudo apt update && sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo apt update
+
+sudo apt install ros-foxy-desktop
+sudo apt-get install ros-foxy-ros2-control ros-foxy-ros2-controllers ros-foxy-moveit ros-foxy-moveit-resources ros-foxy-derived-object-msgs ros-foxy-gazebo-ros ros-foxy-gazebo-ros2-control ros-foxy-tf2-eigen ros-foxy-actionlib-msgs ros-foxy-control-msgs ros-foxy-controller-interface ros-foxy-controller-manager ros-foxy-effort-controllers ros-foxy-geometry-msgs ros-foxy-hardware-interface ros-foxy-ur-msgs ros-foxy-ur-client-library ros-foxy-ur-dashboard-msgs ros-foxy-ur-description python3-pymodbus ros-foxy-diagnostic-updater
+
 # OpenCV
 # Install minimal prerequisites (Ubuntu 18.04 as reference)
 mkdir ~/opencv && cd ~/opencv
@@ -75,17 +88,6 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules ../opencv-4.x
 # Build
 cmake --build .
 cd 
-
-# ROS2 Foxy
-sudo apt install software-properties-common
-sudo add-apt-repository universe
-sudo apt update && sudo apt install curl -y
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-sudo apt update
-
-sudo apt install ros-foxy-desktop
-sudo apt-get install ros-foxy-ros2-control ros-foxy-ros2-controllers ros-foxy-moveit ros-foxy-moveit-resources ros-foxy-derived-object-msgs ros-foxy-gazebo-ros ros-foxy-gazebo-ros2-control ros-foxy-tf2-eigen ros-foxy-actionlib-msgs ros-foxy-control-msgs ros-foxy-controller-interface ros-foxy-controller-manager ros-foxy-effort-controllers ros-foxy-geometry-msgs ros-foxy-hardware-interface ros-foxy-ur-msgs ros-foxy-ur-client-library ros-foxy-ur-dashboard-msgs ros-foxy-ur-description python3-pymodbus ros-foxy-diagnostic-updater
 
 # Tello Drones (does not exist for foxy, unofficial alternative here: https://github.com/tentone/tello-ros2)
 

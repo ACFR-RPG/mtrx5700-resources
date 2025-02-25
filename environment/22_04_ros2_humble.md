@@ -55,6 +55,19 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 && sudo apt update \
 && sudo apt install gh -y
 
+
+# ROS2 Humble
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+sudo apt update && sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo apt update
+
+sudo apt install ros-humble-desktop-full
+sudo apt-get install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-clearpath-ros2-socketcan-interface ros-humble-moveit ros-humble-moveit-visual-tools ros-humble-moveit-ros-control-interface  ros-humble-moveit-resources ros-humble-derived-object-msgs ros-humble-gazebo-ros ros-humble-gazebo-ros2-control ros-humble-tf2-eigen ros-humble-actionlib-msgs ros-humble-control-msgs ros-humble-controller-interface ros-humble-controller-manager ros-humble-effort-controllers ros-humble-geometry-msgs ros-humble-hardware-interface ros-humble-ur-msgs ros-humble-ur-client-library ros-humble-ur-dashboard-msgs ros-humble-ur-description ros-humble-kinematics-interface-kdl python3-pymodbus ros-humble-diagnostic-updater
+
+
 # OpenCV
 # Install minimal prerequisites (Ubuntu 18.04 as reference)
 mkdir ~/opencv && cd ~/opencv
@@ -71,17 +84,6 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules ../opencv-4.x
 # Build
 cmake --build .
 cd 
-
-# ROS2 Humble
-sudo apt install software-properties-common
-sudo add-apt-repository universe
-sudo apt update && sudo apt install curl -y
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-sudo apt update
-
-sudo apt install ros-humble-desktop-full
-sudo apt-get install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-clearpath-ros2-socketcan-interface ros-humble-moveit ros-humble-moveit-visual-tools ros-humble-moveit-ros-control-interface  ros-humble-moveit-resources ros-humble-derived-object-msgs ros-humble-gazebo-ros ros-humble-gazebo-ros2-control ros-humble-tf2-eigen ros-humble-actionlib-msgs ros-humble-control-msgs ros-humble-controller-interface ros-humble-controller-manager ros-humble-effort-controllers ros-humble-geometry-msgs ros-humble-hardware-interface ros-humble-ur-msgs ros-humble-ur-client-library ros-humble-ur-dashboard-msgs ros-humble-ur-description ros-humble-kinematics-interface-kdl python3-pymodbus ros-humble-diagnostic-updater
 
 # Tello Drones
 sudo apt install ros-humble-as2-platform-tello ros-humble-teleop-twist-keyboard
