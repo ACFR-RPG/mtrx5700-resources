@@ -87,6 +87,8 @@ cd
 
 # Tello Drones
 sudo apt install ros-humble-as2-platform-tello ros-humble-teleop-twist-keyboard
+mkdir -p ~/ros2_mtrx5700ws/src && cd ~/ros2_mtrx5700ws/src
+git clone https://github.com/tentone/tello-ros2.git # requires OpenCV 3 to install SLAM. Can remove SLAM folder before building if not needed
 
 # Turtlebot 3
 sudo apt-get install ros-humble-joy ros-humble-teleop-twist-joy ros-humble-teleop-twist-keyboard ros-humble-laser-proc ros-humble-nav2-amcl ros-humble-nav2-map-server ros-humble-urdf ros-humble-xacro ros-humble-compressed-image-transport ros-humble-rqt* ros-humble-rviz2 ros-humble-navigation2 ros-humble-interactive-markers ros-humble-dynamixel-sdk ros-humble-turtlebot3*
