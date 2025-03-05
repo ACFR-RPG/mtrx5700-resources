@@ -11,7 +11,8 @@ IMPORTANT: The resources here may be updated periodically. This is a communal an
 
 ## Robot Starter Guides
 - [Tello Drone starter guide](quickstarts/tello.md)
-- [UR5E Robotic Arm starter guide](quickstarts/ur5e.md)
+<!-- - [UR5E Robotic Arm starter guide (ROS1)](quickstarts/ur5e.md) -->
+- [UR5E Robotic Arm starter guide (ROS2)](quickstarts/ur5e_ros2.md)
 - [Turtlebot3 starter guide](quickstarts/turtlebot3.md)
 
 ## Sensor Starter Guides
