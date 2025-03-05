@@ -19,34 +19,46 @@ The following repositorties from [Universal Robots](https://github.com/Universal
  - https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver
  - https://github.com/UniversalRobots/Universal_Robots_Client_Library
 
-Note that instead of catkin, ROS2 is using a colcon workspace. Clone relevant packages, install dependencies, compile, and source the workspace by using:
+
+
+## Use the package on the hardware
+1. Install the driver:
 ```
-cd $COLCON_WS
-git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver.git src/Universal_Robots_ROS2_Driver
-vcs import src --skip-existing --input src/Universal_Robots_ROS2_Driver/Universal_Robots_ROS2_Driver-not-released.${ROS_DISTRO}.repos
-rosdep update
-rosdep install --ignore-src --from-paths src -y
-colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
-source install/setup.bash
+sudo apt install ros-$ROS_DISTRO-ur-client-library
+sudo apt-get install ros-$ROS_DISTRO-ur
 ```
 
-When consecutive pulls lead to build errors it is possible that you’ll have to build an upstream package from source, as well. Install the missing upstream package by: 
-
+2. Setup the robot: 
+Connect the UR control box directly to the remote PC with an ethernet cable.Open the network settings from the UR teach pendant (Setup Robot -> Network) and enter these settings:
 ```
-cd $COLCON_WS
-vcs import src --skip-existing --input src/Universal_Robots_ROS2_Driver/Universal_Robots_ROS2_Driver.${ROS_DISTRO}.repos
-rosdep update
-rosdep install --ignore-src --from-paths src -y
-```
-
-## ROS2 Connection
-Onboard the teach pendant there is an `external control` script which needs to be run to enable communcation between the UR5e and ROS2. Run this script prior to running the below commands.
-
-```bash
-# Check the IP and whether calibration for the UR5e is available (ask your tutor).
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=<IP_OF_THE_ROBOT> launch_rviz:=true
+IP address: 192.168.1.102
+Subnet mask: 255.255.255.0
+Default gateway: 192.168.1.1
+Preferred DNS server: 192.168.1.1
+Alternative DNS server: 0.0.0.0
 ```
 
+3. Setup the remote PC: 
+On the remote PC, turn off all network devices except the “wired connection”, e.g. turn off wifi. Open Network Settings and create a new Wired connection with these settings. 
+```
+IPv4
+Manual
+Address: 192.168.1.101
+Netmask: 255.255.255.0
+Gateway: 192.168.1.1
+```
+
+Test the connection from the remote PC by: 
+```
+ping 192.168.1.102
+```
+
+4. Onboard the teach pendant there is an `external control` script which needs to be run to enable communcation between the UR5e and ROS2. Run this script prior to running the below commands.
+```
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.1.102 launch_rviz:=true
+```
+
+### Use the package in simulation
 To use mocked hardware (a ros2 simulator, capability of ros2_control), use use_mock_hardware argument, like:
 ```bash
 ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=<IP_OF_THE_ROBOT> use_mock_hardware:=true
